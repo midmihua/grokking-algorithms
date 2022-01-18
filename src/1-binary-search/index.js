@@ -1,4 +1,4 @@
-const { listNumbers } = require('./data');
+const { listNumbers } = require('../data');
 
 const binary_search_number = (list, item) => {
 
