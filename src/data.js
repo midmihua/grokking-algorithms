@@ -102,9 +102,24 @@ const listWords = words
   .map(word => word.toLocaleLowerCase())
   .sort();
 
+const graph_a = {
+  "Tom": ["Eleanor", "Lucy", "Teddy"],
+  "Eleanor": ["James", "Willow",],
+  "Lucy": ["Willow", "Ellis"],
+  "Teddy": ["Wyatt"],
+  "James": ["Sawyer", "Daisy"],
+  "Willow": ["Audrey", "Daisy"],
+  "Ellis": ["Daisy"],
+  "Sawyer": [],
+  "Daisy": ["Kit"],
+  "Audrey": ["Audrey"],
+  "Wyatt": ["Sawyer"]
+};
+
 module.exports = {
   listWords,
   listNumbers,
-  unsortedListNumber
+  unsortedListNumber,
+  graph_a
 }
 
